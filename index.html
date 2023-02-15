@@ -17,10 +17,13 @@
 </head>
 
 <body>
+    <a href="#heroSection" class="btn btn-warning position-fixed" style="bottom: 20px; right: 20px;z-index: 99;">
+        <i class="fa-solid fa-arrow-up text-dark"></i>
+    </a>
+
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container d-flex justify-content-between w-100">
-            <a class="navbar-brand w-25 text-light" href="#heroSection">Luong
-                The Tai</a>
+            <a class="navbar-brand w-25 text-light" href="#heroSection">Luong The Tai</a>
             <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -40,7 +43,7 @@
                     </li>
                 </ul>
 
-                <a href="/page/userPage/userPage.html"
+                <div href="/page/userPage/userPage.html"
                     class="d-flex gap-2 align-items-center w-25 justify-content-lg-center text-decoration-none gap-3"
                     id="navbarNav">
                     <img src="/image/download.jpg" alt="avatar" style="width: 40px; height: 40px"
@@ -49,14 +52,14 @@
                         LuongTai
                         <i class="fa-solid fa-chevron-down px-2" id="user"></i>
                     </span>
-                </a>
+                </div>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="d-flex align-items-center justify-content-center flex-column" style="height: 100vh">
-            <div id="heroSection" class="w-100 position-absolute" style="height: 100vh"></div>
+        <section id="heroSection" class="d-flex align-items-center justify-content-center flex-column">
+            <div id="heroSectionBg" class="w-100 h-100 position-absolute"></div>
 
             <div class="w-100 d-flex flex-column align-items-center justify-content-center gap-5" id="heroContent">
                 <div class="text-center" data-aos="fade-up">
@@ -67,25 +70,25 @@
                     <p class="h5 text-light">We are team of talented digital marketers</p>
                 </div>
 
-                <div class="d-flex gap-1 w-50 row justify-content-between container" data-aos="zoom-in">
-                    <div class="text-center py-4 border border-secondary col-2 heroItem">
+                <div class="d-flex gap-1 w-lg-50 row justify-content-between container" data-aos="zoom-in">
+                    <div class="text-center py-4 border border-secondary col-md-2 col-12 heroItem">
                         <i class="fa-solid fa-shop fs-3 mb-3"></i>
                         <p class="fw-bold fs-6 m-0 text-light">Lorem Ipsum</p>
                     </div>
-                    <div class="text-center py-4 border border-secondary col-2 heroItem">
+                    <div class="text-center py-4 border border-secondary col-md-2 col-12 heroItem">
                         <i class="fa-regular fa-chart-bar fs-3 mb-3"></i>
                         <p class="fw-bold fs-6 m-0 text-light">Dolor Sitema</p>
                     </div>
-                    <div class="text-center py-4 border border-secondary col-2 heroItem">
+                    <div class="text-center py-4 border border-secondary col-md-2 col-12 heroItem">
                         <i class="fa-solid fa-calendar-days fs-3 mb-3"></i>
                         <p class="fw-bold fs-6 m-0 text-light">Sedare
                             Perspiciatis</p>
                     </div>
-                    <div class="text-center py-4 border border-secondary col-2 heroItem">
+                    <div class="text-center py-4 border border-secondary col-md-2 col-12 heroItem">
                         <i class="fa-solid fa-paint-roller fs-3 mb-3"></i>
                         <p class="fw-bold fs-6 m-0 text-light">Magni Dolores</p>
                     </div>
-                    <div class="text-center py-4 border border-secondary col-2 heroItem">
+                    <div class="text-center py-4 border border-secondary col-md-2 col-12 heroItem">
                         <i class="fa-solid fa-database fs-3 mb-3"></i>
                         <p class="fw-bold fs-6 m-0 text-light">Nemos Enimade</p>
                     </div>
@@ -93,7 +96,9 @@
             </div>
         </section>
 
-        <section class="container d-flex flex-lg-row flex-column-reverse align-items-start justify-content-center mt-5 gap-4" id="about">
+        <section
+            class="container d-flex flex-lg-row flex-column-reverse align-items-start justify-content-center mt-5 gap-4 overflow-hidden"
+            id="about">
             <div class="col-12 col-lg-6" data-aos="fade-up-right">
                 <h3 class="fs-4 fw-bold">Voluptatem dignissimos provident
                     quasi corporis voluptates sit assumenda.</h3>
@@ -123,48 +128,49 @@
                 </p>
             </div>
 
-            <img src="/image/about.jpg" alt="about" class="col-12 col-lg-6" style="height: auto" data-aos="fade-up-left" />
+            <img src="/image/about.jpg" alt="about" class="col-12 col-lg-6" style="height: auto"
+                data-aos="fade-up-left" />
         </section>
 
         <div class="swiper mySwiper container my-5" id="company" data-aos="zoom-in">
             <div class="swiper-wrapper d-flex align-items-center">
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-1.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-2.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-3.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-4.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-5.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-6.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-7.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-5.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-6.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-7.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-1.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-2.png" alt="" class="slides" />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide d-flex justify-content-center">
                     <img src="/image/client-3.png" alt="" class="slides" />
                 </div>
             </div>
@@ -173,7 +179,7 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        <section id="aboutList" class="container d-flex flex-column flex-lg-row my-5 gap-5">
+        <section id="aboutList" class="container d-flex flex-column flex-lg-row my-5 gap-5 overflow-hidden">
             <img src="/image/features.jpg" alt="" class="col col-lg-6" style="height: 380px" data-aos="fade-up-right" />
 
             <div class="col col-lg-6 d-flex flex-column justify-content-between" data-aos="fade-up-left">
@@ -219,10 +225,10 @@
             </div>
 
             <div class="row">
-                <div class="col-6 col-lg-4 p-3 servicesItem" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-md-6 col-lg-4 col-12 p-3 servicesItem" data-aos="fade-up" data-aos-delay="500">
                     <div
                         class="border rounded-3 d-flex flex-column justify-content-center align-items-center py-5 text-center gap-2">
-                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center"
+                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center rounded-3"
                             style="width: 50px;height: 50px">
                             <i class="fa-solid fa-globe text-dark"></i>
                         </div>
@@ -232,10 +238,10 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-4 p-3 servicesItem" data-aos="fade-up" data-aos-delay="900">
+                <div class="col-12 col-md-6 col-lg-4 p-3 servicesItem" data-aos="fade-up" data-aos-delay="900">
                     <div
                         class="border rounded-3 d-flex flex-column justify-content-center align-items-center py-5 text-center gap-2">
-                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center"
+                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center rounded-3"
                             style="width: 50px; height: 50px">
                             <i class="fa-solid fa-globe text-dark"></i>
                         </div>
@@ -245,10 +251,10 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-4 p-3 servicesItem" data-aos="fade-up" data-aos-delay="1300">
+                <div class="col-12 col-md-6 col-lg-4 p-3 servicesItem" data-aos="fade-up" data-aos-delay="1300">
                     <div
                         class="border rounded-3 d-flex flex-column justify-content-center align-items-center py-5 text-center gap-2">
-                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center"
+                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center rounded-3"
                             style="width: 50px;height: 50px">
                             <i class="fa-solid fa-globe text-dark"></i>
                         </div>
@@ -258,12 +264,11 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-4 p-3 servicesItem" data-aos="zoom-in" data-aos-delay="700">
+                <div class="col-12 col-md-6 col-lg-4 p-3 servicesItem" data-aos="zoom-in" data-aos-delay="700">
                     <div
                         class="border rounded-3 d-flex flex-column justify-content-center align-items-center py-5 text-center gap-2">
-                        <div class="bg-warning p-4 d-flex align-items-center
-                                justify-content-center" style="width: 50px;
-                                height: 50px">
+                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center rounded-3"
+                            style="width: 50px; height: 50px">
                             <i class="fa-solid fa-globe text-dark"></i>
                         </div>
                         <h5 class="fw-bold h4">Lorem Ipsum</h5>
@@ -272,12 +277,11 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-4 p-3 servicesItem" data-aos="zoom-in" data-aos-delay="1000">
+                <div class="col-12 col-md-6 col-lg-4 p-lg-3 servicesItem" data-aos="zoom-in" data-aos-delay="1000">
                     <div
                         class="border rounded-3 d-flex flex-column justify-content-center align-items-center py-5 text-center gap-2">
-                        <div class="bg-warning p-4 d-flex align-items-center
-                                justify-content-center" style="width: 50px;
-                                height: 50px">
+                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center rounded-3"
+                            style="width: 50px;height: 50px">
                             <i class="fa-solid fa-globe text-dark"></i>
                         </div>
                         <h5 class="fw-bold h4">Lorem Ipsum</h5>
@@ -286,12 +290,11 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-4 p-3 servicesItem" data-aos="zoom-in" data-aos-delay="1300">
+                <div class="col-12 col-md-6 col-lg-4 p-3 servicesItem" data-aos="zoom-in" data-aos-delay="1300">
                     <div
                         class="border rounded-3 d-flex flex-column justify-content-center align-items-center py-5 text-center gap-2">
-                        <div class="bg-warning p-4 d-flex align-items-center
-                                justify-content-center" style="width: 50px;
-                                height: 50px">
+                        <div class="bg-warning p-4 d-flex align-items-center justify-content-center rounded-3"
+                            style="width: 50px;height: 50px">
                             <i class="fa-solid fa-globe text-dark"></i>
                         </div>
                         <h5 class="fw-bold h4">Lorem Ipsum</h5>
@@ -303,7 +306,7 @@
         </section>
 
         <div id="callAction" class="text-center mb-4 p-5 text-light" style="height: 300px">
-            <div data-aos="zoom-in" class="position-absolute top-50 start-50" id="actionContent">
+            <div data-aos="zoom-in" class="position-absolute top-50 start-50 w-100" id="actionContent">
                 <h3>Call To Action</h3>
                 <p class="container">
                     Duis aute irure dolor in reprehenderit in voluptate
@@ -318,7 +321,7 @@
             </div>
         </div>
 
-        <section class="container my-5" id="portfolio">
+        <section class="container my-5 overflow-hidden" id="portfolio">
             <div data-aos="fade-up">
                 <p class="titleSection m-0 text-secondary fw-bold">PORTFOLIO</p>
                 <h2 class="fw-bold">CHECK OUT PORTFOLIO</h2>
@@ -339,118 +342,137 @@
                     <label class="btn btn-outline-warning text-dark border-white" for="btnradio4">WEB</label>
                 </div>
 
-                <div id="portfolioGroup">
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-1.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-3 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+                    
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-1.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-3 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-2.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-3 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-2.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-3 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-3.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-4 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-3.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-4 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-4.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-4 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-4.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-4 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-5.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-4 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-5.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-4 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-6.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-4 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-6.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-4 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-7.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-4 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-7.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-4 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-8.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-4 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-8.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-4 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
-                        <img class="image" src="/image/portfolio-9.jpg" alt="" />
-                        <div class="position-absolute bottom-0 p-4 text-light contentPort">
-                            <h5>App</h5>
-                            <p class="fs-6 fst-italic">APP</p>
-                            <div class="d-flex align-items-center gap-3">
-                                <i class="fa-solid fa-plus text-light"></i>
-                                <i class="fa-solid fa-link text-light"></i>
+                    <div class="p-2">
+                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                            <img class="image" src="/image/portfolio-9.jpg" alt="" />
+                            <div class="position-absolute bottom-0 p-4 text-light contentPort">
+                                <h5>App</h5>
+                                <p class="fs-6 fst-italic">APP</p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-plus text-light"></i>
+                                    <i class="fa-solid fa-link text-light"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="py-5 row d-flex align-items-center mt-5">
+            <div class="py-5 row d-flex align-items-center mt-5 gap-4 gap-lg-0">
                 <div class="col-12 col-lg-5 h-100 couterImg" data-aos="fade-up-right" style="min-height: 400px;"></div>
 
                 <div class="col-12 col-lg-7 px-5" data-aos="fade-up-left">
@@ -459,7 +481,7 @@
                         labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
 
                     <div class="row">
-                        <div class="d-flex align-items-start gap-3 col-6">
+                        <div class="d-flex align-items-start gap-3 col-md-6 col-12">
                             <i class="fa-regular fa-face-smile fs-2 mt-3"></i>
                             <div>
                                 <h5 class="h2 fw-bold">65</h5>
@@ -467,7 +489,7 @@
                                     ipsam architecto ut.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start gap-3 col-6">
+                        <div class="d-flex align-items-start gap-3 col-md-6 col-12">
                             <i class="fa-solid fa-book fs-2 mt-3"></i>
                             <div>
                                 <h5 class="h2 fw-bold">65</h5>
@@ -475,7 +497,7 @@
                                     ipsam architecto ut.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start gap-3 col-6">
+                        <div class="d-flex align-items-start gap-3 col-md-6 col-12">
                             <i class="fa-regular fa-clock fs-2 mt-3"></i>
                             <div>
                                 <h5 class="h2 fw-bold">65</h5>
@@ -483,7 +505,7 @@
                                     ipsam architecto ut.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start gap-3 col-6">
+                        <div class="d-flex align-items-start gap-3 col-md-6 col-12">
                             <i class="fa-solid fa-trophy fs-2 mt-3"></i>
                             <div>
                                 <h5 class="h2 fw-bold">65</h5>
@@ -589,128 +611,140 @@
             </div>
         </div>
 
-        <section id="team" class="container my-5">
+        <section id="team" class="container-lg px-5 px-lg-0 my-5">
             <div data-aos="fade-up">
                 <p class="titleSection m-0 text-secondary fw-bold">TEAM</p>
                 <h2 class="fw-bold">CHECK OUR TEAM</h2>
             </div>
 
-            <div class="d-flex my-5 gap-4">
-                <div class="rounded-3 col-6 col-lg-3 teamItem" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <div class="position-relative">
-                        <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
+            <div class="my-5 row row-cols-lg-4 row-cols-md-2 row-cols-1">
+                <div class="p-2">
+                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="500">
+                        <div class="position-relative">
+                            <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
 
-                        <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup" style="bottom: 10px;left: 25%;">
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-twitter text-dark"></i>
-                            </div>
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-facebook-f text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-instagram text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-skype text-dark"></i>
+                            <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup">
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-twitter text-dark"></i>
+                                </div>
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-facebook-f text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-instagram text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-skype text-dark"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pt-4 px-3 rounded-bottom">
-                        <h6 class="h5 m-0">Luong Tai</h6>
-                        <p class="text-secondary">CEO</p>
+                        <div class="pt-4 p-3 rounded-bottom">
+                            <h6 class="h5 m-0">Luong Tai</h6>
+                            <p class="text-secondary">CEO</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="rounded-3 col-6 col-lg-3 teamItem" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                    <div class="position-relative">
-                        <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
+                <div class="p-2">
+                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="700">
+                        <div class="position-relative">
+                            <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
 
-                        <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup" style="bottom: 10px;left: 25%;">
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-twitter text-dark"></i>
-                            </div>
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-facebook-f text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-instagram text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-skype text-dark"></i>
+                            <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup">
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-twitter text-dark"></i>
+                                </div>
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-facebook-f text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-instagram text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-skype text-dark"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pt-4 px-3 rounded-bottom">
-                        <h6 class="h5 m-0">Luong Tai</h6>
-                        <p class="text-secondary">CEO</p>
+                        <div class="pt-4 p-3 rounded-bottom">
+                            <h6 class="h5 m-0">Luong Tai</h6>
+                            <p class="text-secondary">CEO</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="rounded-3 col-6 col-lg-3 teamItem" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
-                    <div class="position-relative">
-                        <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
+                <div class="p-2">
+                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="900">
+                        <div class="position-relative">
+                            <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
 
-                        <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup" style="bottom: 10px;left: 25%;">
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-twitter text-dark"></i>
-                            </div>
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-facebook-f text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-instagram text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-skype text-dark"></i>
+                            <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup">
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-twitter text-dark"></i>
+                                </div>
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-facebook-f text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-instagram text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-skype text-dark"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pt-4 px-3 rounded-bottom">
-                        <h6 class="h5 m-0">Luong Tai</h6>
-                        <p class="text-secondary">CEO</p>
+                        <div class="pt-4 p-3 rounded-bottom">
+                            <h6 class="h5 m-0">Luong Tai</h6>
+                            <p class="text-secondary">CEO</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="rounded-3 col-6 col-lg-3 teamItem" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">
-                    <div class="position-relative">
-                        <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
+                <div class="p-2">
+                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="1100">
+                        <div class="position-relative">
+                            <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
 
-                        <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup" style="bottom: 10px;left: 25%;">
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-twitter text-dark"></i>
-                            </div>
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-facebook-f text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-instagram text-dark"></i>
-                            </div>
-    
-                            <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
-                                <i class="fa-brands fa-skype text-dark"></i>
+                            <div class="d-flex justify-content-center position-absolute gap-2 teamLogoGroup">
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-twitter text-dark"></i>
+                                </div>
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-facebook-f text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-instagram text-dark"></i>
+                                </div>
+
+                                <div class="p-1 d-flex justify-content-center align-items-center rounded-3 teamLogo">
+                                    <i class="fa-brands fa-skype text-dark"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="pt-4 px-3 rounded-bottom">
-                        <h6 class="h5 m-0">Luong Tai</h6>
-                        <p class="text-secondary">CEO</p>
+                        <div class="pt-4 p-3 rounded-bottom">
+                            <h6 class="h5 m-0">Luong Tai</h6>
+                            <p class="text-secondary">CEO</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="container my-5">
+        <section id="contact" class="container my-5 overflow-hidden">
             <div data-aos="fade-up">
                 <p class="titleSection m-0 text-secondary fw-bold">CONTACT</p>
                 <h2 class="fw-bold">CONTACT US</h2>
@@ -721,8 +755,8 @@
                 width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="my-5"></iframe>
 
-            <div class="row">
-                <div class="d-flex flex-column gap-5 col-5" data-aos="fade-up-right">
+            <div class="row gap-5 gap-lg-0">
+                <div class="d-flex flex-column gap-3 col-lg-4 col-12" data-aos="fade-up-right">
                     <div class="d-flex align-items-center gap-3">
                         <div class="bg-warning p-3 d-flex align-items-center justify-content-center rounded-3"
                             style="width: 50px;height: 50px;">
@@ -730,8 +764,8 @@
                         </div>
 
                         <div>
-                            <h3 class="m-0">Location:</h3>
-                            <p class="m-0 text-secondary">Binh Duong</p>
+                            <h3 class="m-0 fs-4">Location:</h3>
+                            <p class="m-0 text-secondary">Doc La Binh Duong</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center gap-3">
@@ -741,7 +775,7 @@
                         </div>
 
                         <div>
-                            <h3 class="m-0">Email:</h3>
+                            <h3 class="m-0 fs-4">Email:</h3>
                             <p class="m-0 text-secondary">luongthetai2705@gmail.com</p>
                         </div>
                     </div>
@@ -752,19 +786,28 @@
                         </div>
 
                         <div>
-                            <h3 class="m-0">Call</h3>
+                            <h3 class="m-0 fs-4">Call</h3>
                             <p class="m-0 text-secondary">09999999999</p>
                         </div>
                     </div>
                 </div>
 
-                <form action="" class="col-7" data-aos="fade-up-left">
-                    <input class="form-control col-5 mb-3" type="text" name="name" id="name" placeholder="Your Name" required>
-                    <input class="form-control col-5 mb-3" type="text" name="email" id="email" placeholder="Your Email" required>
-                    <input class="form-control col-12 mb-3" type="text" name="subject" id="subject"
+                <form action="" class="col-lg-8 col-12" data-aos="fade-up-left">
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control col mb-4" type="text" name="name" id="name"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div class="col">
+                            <input class="form-control col mb-4" type="text" name="email" id="email"
+                                placeholder="Your Email" required>
+                        </div>
+                    </div>
+
+                    <input class="form-control col-12 mb-4" type="text" name="subject" id="subject"
                         placeholder="Subject" required>
-                    <textarea class="form-control mb-3" name="message" id="masage" rows="4"
-                        placeholder="Message" required></textarea>
+                    <textarea class="form-control mb-3" name="message" id="masage" rows="4" placeholder="Message"
+                        required></textarea>
 
                     <div class="text-center">
                         <button class="btn btn-warning px-3">Send Message</button>
@@ -775,71 +818,79 @@
     </main>
 
     <footer class="bg-dark">
-        <div class="d-flex container text-white justify-content-between py-5">
-            <div class="col-3 d-grid gap-3">
-                <h1>GP.</h1>
-                <div>
-                    A108 Adam Street<br> NY 535022, USA
+        <div class="container">
+            <div class="text-white justify-content-between py-5 row">
+                <div class="col-lg-3 col-md-6 col-12 d-grid gap-3 mb-5 mb-lg-0">
+                    <h1>GP.</h1>
+                    <div>
+                        A108 Adam Street<br> NY 535022, USA
+                    </div>
+
+                    <div>
+                        Phone: 0123456789
+                        Email: info@example.com
+                    </div>
+
+                    <div id="logo-link" class="d-flex w-100 gap-2">
+                        <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
+                            <i class="fa-brands fa-twitter text-dark"></i>
+                        </div>
+
+                        <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
+                            <i class="fa-brands fa-facebook-f text-dark"></i>
+                        </div>
+
+                        <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
+                            <i class="fa-brands fa-instagram text-dark"></i>
+                        </div>
+
+                        <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
+                            <i class="fa-brands fa-skype text-dark"></i>
+                        </div>
+
+                        <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
+                            <i class="fa-brands fa-linkedin-in text-dark"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    Phone: 0123456789
-                    Email: info@example.com
+                <div class="col-lg-2 col-md-6 col-12 mb-5 mb-lg-0">
+                    <h5 class="mb-3">Useful Links</h5>
+                    <ul class="d-flex flex-column gap-3" style="list-style-type: none;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
                 </div>
 
-                <div id="logo-link" class="d-flex w-100 gap-2">
-                    <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
-                        <i class="fa-brands fa-twitter text-dark"></i>
-                    </div>
-
-                    <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
-                        <i class="fa-brands fa-facebook-f text-dark"></i>
-                    </div>
-
-                    <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
-                        <i class="fa-brands fa-instagram text-dark"></i>
-                    </div>
-
-                    <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
-                        <i class="fa-brands fa-skype text-dark"></i>
-                    </div>
-
-                    <div class="bg-warning p-1 d-flex justify-content-center align-items-center rounded-3">
-                        <i class="fa-brands fa-linkedin-in text-dark"></i>
-                    </div>
+                <div class="col-lg-2 col-md-6 col-12 mb-5 mb-lg-0">
+                    <h5 class="mb-3">Useful Links</h5>
+                    <ul class="d-flex flex-column gap-3" style="list-style-type: none;">
+                        <li><a href="index.html">Web Design</a></li>
+                        <li><a href="index.html">Web Development</a></li>
+                        <li><a href="index.html">Product Management</a></li>
+                        <li><a href="index.html">Marketing</a></li>
+                        <li><a href="index.html">Graphic Design</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-2">
-                <h5 class="mb-3">Useful Links</h5>
-                <ul class="d-flex flex-column gap-3" style="list-style-type: none;">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <h5 class="mb-3">Useful Links</h5>
-                <ul class="d-flex flex-column gap-3" style="list-style-type: none;">
-                    <li><a href="index.html">Web Design</a></li>
-                    <li><a href="index.html">Web Development</a></li>
-                    <li><a href="index.html">Product Management</a></li>
-                    <li><a href="index.html">Marketing</a></li>
-                    <li><a href="index.html">Graphic Design</a></li>
-                </ul>
-            </div>
-            <div class="col-5 px-5 d-flex flex-column gap-3">
-                <h5>Our Newsletter</h5>
-                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                <form action="">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control col-9" aria-describedby="button-addon2" required>
-                        <button class="btn btn-warning col-3" type="submit" id="button-addon2">Subscribe</button>
-                    </div>
-                </form>
+
+                <div class="col-lg-5 col-md-6 col-12 px-lg-5 d-flex flex-column gap-3 mb-5 mb-lg-0">
+                    <h5>Our Newsletter</h5>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control col-lg-9 col-8" aria-describedby="button-addon2"
+                                required>
+                            <button class="btn btn-warning col-lg-3 col-4" type="submit"
+                                id="button-addon2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+
         <div class="text-white text-center py-4" style="background-color: #000;">
             <p class="m-0">© Copyright Gp. All Rights Reserved</p>
             <p class="m-0">Designed by LuongTheTai</p>
@@ -855,15 +906,29 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 6,
-            spaceBetween: 30,
             freeMode: true,
+            slidesPerView: 2,
+            spaceBetween: 20,
             autoplay: {
                 delay: 1000,
             },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                '576': {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                '992': {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                '1200': {
+                    slidesPerView: 6,
+                    spaceBetween: 30,
+                }
             },
         });
 
