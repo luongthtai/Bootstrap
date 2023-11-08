@@ -172,9 +172,6 @@ img {
   background-color: rgba(0, 0, 0, 0.8549019608);
 }
 
-.teamItem {
-  box-shadow: 0px 5px 10px 0px #e5e5e5;
-}
 .teamItem:hover .teamLogoGroup {
   transform: translate(-50%, 0) !important;
   opacity: 1;
@@ -191,7 +188,7 @@ img {
 .teamLogo {
   width: 30px;
   height: 30px;
-  background-color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.6588235294);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -215,6 +212,12 @@ footer ul li:hover {
 }
 footer ul li:hover a {
   color: #e1b153 !important;
+}
+
+.grid-item {
+  transition: 0.3s linear;
+  width: 25%;
+  height: auto;
 }
 
 /*# sourceMappingURL=index.css.map */

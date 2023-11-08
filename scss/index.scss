@@ -1,141 +1,141 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 i {
-    color: #e1b153;
+  color: #e1b153;
 }
 
 a {
-    text-decoration: none !important;
-    color: #fff !important;
+  text-decoration: none !important;
+  color: #fff !important;
 }
 
 img {
-    width: 100%;
-    display: block;
-    position: relative;
-    transition: 0.3s;
-    height: auto;
+  width: 100%;
+  display: block;
+  position: relative;
+  transition: 0.3s;
+  height: auto;
 }
 
 .titleSection {
-    width: fit-content;
-    position: relative;
-    letter-spacing: 2px;
-    font-size: 12px;
+  width: fit-content;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 12px;
 
-    &:after {
-        content: "";
-        width: 100px;
-        height: 1px;
-        background-color: #e1b153;
-        position: absolute;
-        top: 50%;
-        left: 120%;
-        transform: translateY(-50%);
-        display: block;
-    }
+  &:after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #e1b153;
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    transform: translateY(-50%);
+    display: block;
+  }
 }
 
 #navbar {
-    background-color: #000000da;
+  background-color: #000000da;
 }
 
 #heroSection {
-    height: 100vh;
-    background: url('/image/hero-bg.jpg') no-repeat fixed center;
+  height: 100vh;
+  background: url("/image/hero-bg.jpg") no-repeat fixed center;
 
-    #heroSectionBg {
-        &::before {
-            content: "";
-            width: 100%;
-            height: 100vh;
-            background-color: #00000096;
-            position: absolute;
-            top: 0;
-        }
+  #heroSectionBg {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100vh;
+      background-color: #00000096;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  #heroContent {
+    z-index: 10;
+
+    p {
+      transition: 0.3s;
+      cursor: pointer;
     }
 
-    #heroContent {
-        z-index: 10;
+    .heroItem:hover {
+      transition: 0.4s;
+      border: 1px solid #e1b153 !important;
 
-        p {
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .heroItem:hover {
-            transition: 0.4s;
-            border: 1px solid #e1b153 !important;
-
-            p {
-                color: #e1b153 !important;
-            }
-        }
+      p {
+        color: #e1b153 !important;
+      }
     }
+  }
 }
 
 #user {
-    color: #fff;
+  color: #fff;
 }
 
 .slides {
-    width: 100px;
-    filter: grayscale(100%);
-    transition: 0.2s;
+  width: 100px;
+  filter: grayscale(100%);
+  transition: 0.2s;
 
-    &:hover {
-        filter: none;
-    }
+  &:hover {
+    filter: none;
+  }
 }
 
 .servicesItem {
-    transition: 0.3s !important;
+  transition: 0.3s !important;
 
-    div {
-        padding: 10px;
-        transition: 0.3s;
+  div {
+    padding: 10px;
+    transition: 0.3s;
 
-        h5 {
-            transition: 0.3s;
+    h5 {
+      transition: 0.3s;
 
-            &:hover {
-                color: #e1b153;
-            }
-        }
+      &:hover {
+        color: #e1b153;
+      }
     }
+  }
 }
 
 .servicesItem:hover {
-    transform: translateY(-10px) !important;
-    cursor: pointer;
+  transform: translateY(-10px) !important;
+  cursor: pointer;
 
-    div {
-        box-shadow: 0px 0px 14px 10px #f1f1f1;
-        border: none !important;
-    }
+  div {
+    box-shadow: 0px 0px 14px 10px #f1f1f1;
+    border: none !important;
+  }
 }
 
 #callAction {
-    background: url("/image/cta-bg.jpg") fixed center no-repeat;
-    position: relative;
+  background: url("/image/cta-bg.jpg") fixed center no-repeat;
+  position: relative;
 
-    &::before {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.589);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        transition: 0.2s;
-    }
+  &::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 0.2s;
+  }
 }
 
 #actionContent {
-    transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 // #portfolioGroup {
@@ -152,117 +152,121 @@ img {
 // }
 
 .portfolioImg {
-    overflow: hidden;
-    // margin: 20px;
-    cursor: pointer;
+  overflow: hidden;
+  // margin: 20px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    .image {
+      transform: scale(1.2);
+    }
+
+    .contentPort {
+      opacity: 1;
+    }
 
     &::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        transition: 0.3s;
+      background-color: #00000096;
     }
-
-    &:hover {
-        .image {
-            transform: scale(1.2);
-        }
-
-        .contentPort {
-            opacity: 1;
-        }
-
-        &::before {
-            background-color: #00000096;
-        }
-    }
+  }
 }
 
 .contentPort {
-    opacity: 0;
-    transition: 0.3s;
-    z-index: 3;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 3;
 }
 
 .couterImg {
-    background: url("/image/counts-img.jpg") center no-repeat;
-    background-size: cover;
+  background: url("/image/counts-img.jpg") center no-repeat;
+  background-size: cover;
 }
 
 #slidesPort {
-    background-image: url("/image/testimonials-bg.jpg");
-    background-attachment: fixed;
-    position: relative;
+  background-image: url("/image/testimonials-bg.jpg");
+  background-attachment: fixed;
+  position: relative;
 
-    #bg-testimonials {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000000da;
-    }
+  #bg-testimonials {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000da;
+  }
 }
 
 .teamItem {
-    box-shadow: 0px 5px 10px 0px #e5e5e5;
-
-    &:hover {
-        .teamLogoGroup {
-            transform: translate(-50%, 0) !important;
-            opacity: 1;
-        }
+  &:hover {
+    .teamLogoGroup {
+      transform: translate(-50%, 0) !important;
+      opacity: 1;
     }
+  }
 }
 
 .teamLogoGroup {
-    transform: translate(-50%, -30px);
-    opacity: 0;
+  transform: translate(-50%, -30px);
+  opacity: 0;
 
-    transition: 0.4s;
+  transition: 0.4s;
 
-    bottom: 20px;
-    left: 50%;
+  bottom: 20px;
+  left: 50%;
 }
 
 .teamLogo {
-    width: 30px;
-    height: 30px;
-    background-color: #f1f1f1;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffffa8;
+  cursor: pointer;
 
-    transition: 0.3s;
+  transition: 0.3s;
 
-    &:hover {
-        background-color: #e1b153;
-    }
+  &:hover {
+    background-color: #e1b153;
+  }
 }
 
 footer {
-    #logo-link {
-        div {
-            width: 40px;
-            height: 40px;
-        }
+  #logo-link {
+    div {
+      width: 40px;
+      height: 40px;
     }
+  }
 
-    ul {
-        padding: 0;
-        margin: 0;
+  ul {
+    padding: 0;
+    margin: 0;
 
-        li {
-            transition: 0.3s;
+    li {
+      transition: 0.3s;
 
-            &:hover {
-                transform: translateX(10px);
+      &:hover {
+        transform: translateX(10px);
 
-                a {
-                    color: #e1b153 !important;
-                }
-            }
+        a {
+          color: #e1b153 !important;
         }
+      }
     }
+  }
+}
+
+.grid-item {
+  transition: 0.3s linear;
+  width: 25%;
+  height: auto;
 }

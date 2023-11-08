@@ -14,6 +14,9 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -330,22 +333,26 @@
             <div class="w-100 d-flex justify-content-center flex-column align-items-center">
                 <div class="m-5" role="group" aria-label="Basic radio toggle button group" data-aos="zoom-in">
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class="btn btn-outline-warning text-dark border-white" for="btnradio1">ALL</label>
+                    <label class="buttonFilter btn btn-outline-warning text-dark border-white" for="btnradio1"
+                        data-filter="*">ALL</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-outline-warning text-dark border-white" for="btnradio2">APP</label>
+                    <label class="buttonFilter btn btn-outline-warning text-dark border-white" for="btnradio2"
+                        data-filter=".app">APP</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="btn btn-outline-warning text-dark border-white" for="btnradio3">CARD</label>
+                    <label class="buttonFilter btn btn-outline-warning text-dark border-white" for="btnradio3"
+                        data-filter=".card">CARD</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                    <label class="btn btn-outline-warning text-dark border-white" for="btnradio4">WEB</label>
+                    <label class="buttonFilter btn btn-outline-warning text-dark border-white" for="btnradio4"
+                        data-filter=".web">WEB</label>
                 </div>
 
-                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
-                    
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                <div class="grid w-100">
+
+                    <div class="grid-item app" data-category="app">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-1.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-3 text-light contentPort">
                                 <h5>App</h5>
@@ -358,8 +365,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item card" data-category="card">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-2.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-3 text-light contentPort">
                                 <h5>App</h5>
@@ -372,8 +379,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item app" data-category="app">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-3.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-4 text-light contentPort">
                                 <h5>App</h5>
@@ -386,8 +393,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item web" data-category="web">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-4.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-4 text-light contentPort">
                                 <h5>App</h5>
@@ -400,8 +407,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item web" data-category="web">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-5.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-4 text-light contentPort">
                                 <h5>App</h5>
@@ -414,8 +421,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item card" data-category="card">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-6.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-4 text-light contentPort">
                                 <h5>App</h5>
@@ -428,8 +435,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item app" data-category="app">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-7.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-4 text-light contentPort">
                                 <h5>App</h5>
@@ -442,8 +449,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item card" data-category="card">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-8.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-4 text-light contentPort">
                                 <h5>App</h5>
@@ -456,8 +463,8 @@
                         </div>
                     </div>
 
-                    <div class="p-2">
-                        <div class="position-relative p-0 portfolioImg" data-aos="fade-up">
+                    <div class="grid-item web" data-category="web">
+                        <div class="position-relative p-0 portfolioImg">
                             <img class="image" src="/image/portfolio-9.jpg" alt="" />
                             <div class="position-absolute bottom-0 p-4 text-light contentPort">
                                 <h5>App</h5>
@@ -619,7 +626,7 @@
 
             <div class="my-5 row row-cols-lg-4 row-cols-md-2 row-cols-1">
                 <div class="p-2">
-                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                    <div class="rounded-3 p-0 teamItem shadow" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-delay="500">
                         <div class="position-relative">
                             <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
@@ -650,7 +657,7 @@
                 </div>
 
                 <div class="p-2">
-                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                    <div class="rounded-3 p-0 teamItem shadow" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-delay="700">
                         <div class="position-relative">
                             <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
@@ -681,7 +688,7 @@
                 </div>
 
                 <div class="p-2">
-                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                    <div class="rounded-3 p-0 teamItem shadow" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-delay="900">
                         <div class="position-relative">
                             <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
@@ -712,7 +719,7 @@
                 </div>
 
                 <div class="p-2">
-                    <div class="rounded-3 p-0 teamItem" data-aos="fade-up" data-aos-duration="1000"
+                    <div class="rounded-3 p-0 teamItem shadow" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-delay="1100">
                         <div class="position-relative">
                             <img src="/image/team-1.jpg" alt="" class="rounded-top" style="min-height: 350px;">
@@ -897,12 +904,17 @@
         </div>
     </footer>
 
+
+
+    <!--- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
         });
     </script>
+
+    <!--- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -945,6 +957,28 @@
             },
         });
     </script>
+
+    <!--- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script>
+        var grid = document.querySelector('.grid');
+
+        var iso = new Isotope(grid, {
+            itemSelector: '.grid-item',
+        });
+
+        $('.buttonFilter').click(function () {
+            let filter = $(this).attr('data-filter');
+            console.log(filter)
+
+            iso.arrange({
+                filter: filter
+            });
+
+        })
+    </script>
+
+    <!--- bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
