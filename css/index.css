@@ -217,7 +217,7 @@ footer ul li:hover a {
 .grid-item {
   transition: 0.3s linear;
   width: 25%;
-  height: auto;
+  min-height: 695.062px;
 }
 
 /*# sourceMappingURL=index.css.map */
